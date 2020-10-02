@@ -11,8 +11,7 @@
  * @param {ListNode} headB
  * @return {ListNode}
  */
-const getIntersectionNode = function (headA, headB) {
-
+const getIntersectionNode = function (l1, l2) {
   let p1 = l1;
   let p2 = l2;
   if (!p1 || !p2) return;
@@ -21,7 +20,6 @@ const getIntersectionNode = function (headA, headB) {
     p2 = p2 == null ? l1 : p2.next;
   }
   return p1;
-
 };
 
 
