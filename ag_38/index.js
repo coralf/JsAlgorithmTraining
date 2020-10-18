@@ -28,7 +28,6 @@ var countAndSay = function (n) {
       cur += (right - left).toString() + pre[left];
       left = right;
     }
-    console.log('cur,i :>> ', cur,i);
   }
   return cur;
 };
