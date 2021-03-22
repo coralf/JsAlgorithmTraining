@@ -32,16 +32,13 @@ const getLongestCommonPrefix = (strs, start, end) => {
   if (start === end) {
     return strs[start];
   } else {
-    const mid = Math.floor(end - start / 2) + start;
+    const mid = Math.floor((end - start) / 2) + start;
     const left = getLongestCommonPrefix(strs, start, mid);
     const right = getLongestCommonPrefix(strs, mid + 1, end);
     return getPrefix(left, right);
   }
 
 }
-
-
-console.log(longestCommonPrefix(["flower", "flow", "flight", "flxxx", "fl12e12"]));
 
 
 
